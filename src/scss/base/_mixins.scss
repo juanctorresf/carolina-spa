@@ -12,7 +12,7 @@
         @content;
     }
 }
-  
+
 @mixin desktop {
     @media (min-width: v.$desktop) {
         @content;
@@ -20,6 +20,7 @@
 }
 
 
+/** Boton **/
 @mixin boton($bgColor, $colorTexto) {
     background-color: $bgColor;
     padding: 2rem 2rem;
@@ -46,4 +47,29 @@
     display: grid;
     gap: $espaciado;
     grid-template-columns: repeat($columnas, 1fr);
+}
+
+/** Titulo **/
+@mixin headingCursiva {
+    text-align: center;
+    color: v.$secundario;
+    font-family: v.$fuenteCursiva;
+    line-height: .8;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-size: 4rem;
+
+    span {
+        color: v.$negro;
+        font-family: v.$fuentePrincipal;
+        display: block;
+        text-transform: uppercase;
+    }
+}
+
+@mixin heading {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    font-size: 4rem;
 }
