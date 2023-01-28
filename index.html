@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Lato:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
@@ -58,12 +59,24 @@
         </div>
     </div>
 
-    <section class="slider">
-        <ul class="slider__contenedor">
-            <li class="slider__slide">
+    <section class="swiper slider  contenedor">
+        <ul class="swiper-wrapper slider__contenido">
+
+            <li class="swiper-slide slider__slide">
                 <img class="slider__imagen" src="build/img/slide_01.jpg" alt="imagen slide">
             </li>
+            <li class="swiper-slide slider__slide">
+                <img class="slider__imagen" src="build/img/slide_02.jpg" alt="imagen slide">
+            </li>
+            
+            <li class="swiper-slide slider__slide">
+                <img class="slider__imagen" src="build/img/slide_03.jpg" alt="imagen slide">
+            </li>
+            
         </ul>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </section>
 
     <section class="bienvenida seccion">
@@ -154,7 +167,7 @@
                         <tr class="tabla__tr">
                             <td class="tabla__td">Sábado</td>
                             <td class="tabla__td">9:00</td>
-                            <td class="tabla__td">19:00</td>
+                            <td class="tabla__td">14:00</td>
                         </tr> <!--.tabla__tr-->
 
                         <tr class="tabla__tr">
@@ -228,5 +241,59 @@
             tempore deserunt, explicabo nam modi error vel porro? Ducimus, minus saepe.</p>
         <a class="cita__enlace" href="#">Leer más</a>
     </section>
+
+    <footer class="footer">
+        <div class="footer__grid contenedor">
+            <div class="footer__widget">
+                <h3 class="footer__heading">Nosotros</h3>
+                <p class="footer__texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Eos soluta voluptatem, impedit obcaecati enim ab eius delectus rem, provident 
+                    nobis libero? Repudiandae fugit voluptates neque nisi culpa expedita, deleniti in.</p>
+            </div>
+
+            <div class="footer__widget">
+                <h3 class="footer__heading">Horario</h3>
+                <p class="footer_texto">Lun - Vie: 9AM - 7PM</p>
+                <p class="footer_texto">Sábado: 9AM - 2PM</p>
+                <p class="footer_texto">Dom: Cerrado.</p>
+            </div>
+
+            <div class="footer__widget">
+                <h3 class="footer__heading">Contacto</h3>
+                <p class="footer__texto">Av. Revolución 1818</p>
+                <div class="sociales">
+                    <a class="sociales__enlace" href="https://facebook.com" target="_blank">
+                        <span class="sociales__accesible">Facebook</span>
+                    </a>
+                    
+                    <a class="sociales__enlace" href="https://twitter.com" target="_blank">
+                        <span class="sociales__accesible">Twitter</span>
+                    </a>
+    
+                    <a class="sociales__enlace" href="https://instagram.com" target="_blank">
+                        <span class="sociales__accesible">Instagram</span>
+                    </a>
+    
+                    <a class="sociales__enlace" href="https://pinterest.com" target="_blank">
+                        <span class="sociales__accesible">Pinterest</span>
+                    </a>
+                    
+                    <a class="sociales__enlace" href="https://youtube.com" target="_blank">
+                        <span class="sociales__accesible">Youtube</span>
+                    </a>
+                    
+                    <a class="sociales__enlace" href="https://tiktok.com" target="_blank">
+                        <span class="sociales__accesible">tiktok</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <p class="footer__copyright">Carolina Spa & Salon. Todos los derechos reservados.</p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
